@@ -20,7 +20,7 @@ const Banner=()=>{
     console.log("movies:",movies)
     
 
-    //trumcate the descriptions
+    //truncate the descriptions
     function truncate(string, n){
         return string?.length>n ? string.substr(0,n-1) + "..." : string
     }
@@ -29,20 +29,21 @@ const Banner=()=>{
     return(
         <header className="banner" style={{
             backgroundSize:"cover",
-            backgroundImage:`url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvSBmJ9i30e_MaNrkt7UwS43WLxStfhL1wpQ&usqp=CAU')`,
+            backgroundImage:`url('https://image.tmdb.org/t/p/original/${movies?.backdrop_path}')`,
+            // backgroundImage:`url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvSBmJ9i30e_MaNrkt7UwS43WLxStfhL1wpQ&usqp=CAU')`,
             backgroundPosition:"center center"
         }}>
 
             <div className = "banner__contents">
                 <h1 className="banner__title">
-                    Movie Name
+                    {movies?.name}
                 </h1>
                 <div className="banner__buttons">
                     <button className="banner__button">Play</button>
                     <button className="banner__button">List</button>
                 </div>
                 <h1 className="banner__description">
-                {  truncate('This is test description.This is test description.This is test description.This is test descriptiThis is test description.This is test description.This is test description.This is test description.This is test description',30)
+                {  truncate(`${movies?.overview}`,100)
                 }
                 </h1>
             </div>
