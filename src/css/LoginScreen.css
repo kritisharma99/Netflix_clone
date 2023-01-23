@@ -1,0 +1,94 @@
+.loginScreen{
+    position: relative;
+    height:100%;
+    width:100%; 
+    /* background-color: white; */
+    background: url('../assests/IN-en-20230116-popsignuptwoweeks-perspective_alpha_website_medium.jpeg') center no-repeat;
+    background-size:cover;
+    
+}
+.loginScreen__background{
+    display: flex;
+    justify-content: space-between;
+    background:rgba(0,0,0,0.8);
+
+}
+.loginScreen__logo{
+    /* position: fixed;
+    left:0; */
+    width:150px;
+    object-fit:contain;
+    padding-left:20px;
+    padding-top: 20px;
+    /* top: 20px; */
+}
+
+ .loginScreen__Btn{
+    margin-right:20px;
+    margin-top: 20px; 
+    padding:10px 20px;
+    color: white;
+    background-color: #e50914;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.2rem;
+    font-weight:600;
+    /* position: fixed;
+    right:20px;
+    top:20px; */
+}
+.loginScreen__gradient{
+    width:100%; 
+    z-index:1;
+    height: 100vh;
+    background: rgba(0,0,0,0.4);
+    background-image: linear-gradient(
+        to top,
+        rgba(0,0,0,0.8) 0,
+        rgba(0,0,0,0) 60%,
+        rgba(0,0,0,0.8) 100%
+    );
+}
+
+.loginScreen__body{
+    position:absolute;
+    top:27%;
+    left:27%;
+    right:27%;
+    text-align:center;
+    z-index:1;
+    padding:20px;
+    color: white;
+}
+.loginScreen__body > h1{
+    font-size:3.110rem;
+    margin-bottom: 20px;
+}
+.loginScreen__body > h2{
+    font-size:1.8rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.loginScreen__body > h3{
+    font-size:1.2rem;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+.loginScreen__input >form >input {
+    padding: 10px;
+    /* outline of input box when it gets in focus */
+    outline-width: 0;
+    height:29px;
+    width: 30%;
+    border:none;
+    max-width:600px;
+}
+.loginScreen__getStarted{
+    padding:16px 20px;
+    font-size:1rem;
+    border: none;
+    color:white;
+    background-color: #e50914;
+    font-weight: 600;
+    cursor: pointer;
+}

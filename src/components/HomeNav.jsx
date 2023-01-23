@@ -1,8 +1,10 @@
 import "../css/Nav.css"
 import { useEffect, useState } from "react"
+import { useNavigate} from "react-router-dom";
+
 const HomeNav = ()=>{
     const [show,handleShow] = useState(false)
-
+    const history = useNavigate()
     const transitionNavBar = ()=>{
         if(window.scrollY>100){
             handleShow(true)
@@ -23,9 +25,9 @@ const HomeNav = ()=>{
         <div className={`nav ${show && 'nav__black'}`}>
             {/* BAM naming convention css classes */}
             <div className="nav__content">
-                <img className="nav__logo"
+                <img className="nav__logo" onClick={()=> history("/")}
                 src="https://www.freepnglogos.com/uploads/netflix-logo-0.png" alt=""/>
-                <img className="nav__avatar"
+                <img className="nav__avatar" onClick={()=> history('/profile')}
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXvEnLacTmiOPneb1HnzYT48ZSDDCllS4QMg&usqp=CAU" alt="avatar_logo"/>
                
             </div>
