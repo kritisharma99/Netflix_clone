@@ -28,7 +28,5 @@
 ## Where to connect
 ## [Let's get Connect on LinkedIn](https://www.linkedin.com/in/kriti-sharma-1b5a60169/) 
 
-## Acknowledgment
-### Udemy
 
 #### This project took around 12-13 hours to complete.
